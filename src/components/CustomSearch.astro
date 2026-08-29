@@ -1,0 +1,23 @@
+---
+import DefaultSearch from '@astrojs/starlight/components/Search.astro'
+import VisitorCount from './VisitorCount.astro'
+---
+
+<div class="search-row">
+  <DefaultSearch />
+  <VisitorCount />
+</div>
+
+<style>
+  .search-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media (max-width: 50rem) {
+    .search-row {
+      gap: 0.5rem;
+    }
+  }
+</style>

@@ -8,7 +8,19 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
+			components: {
+        		Search: './src/components/CustomSearch.astro',
+     		},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/JCai-Code' }],
+			head: [
+				{ 
+					tag: 'script', 
+					attrs: {
+						src: 'https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js',
+						defer: true,
+					}
+				},
+			],
 			sidebar: [
 				{
 					label: 'Guides',
