@@ -22,16 +22,16 @@ export default defineConfig({
 				},
 			],
 			sidebar: [
+				// {
+				// 	label: 'Guides',
+				// 	items: [
+				// 		// Each item here is one entry in the navigation menu.
+				// 		{ label: 'Example Guide', slug: 'guides/example' },
+				// 	],
+				// },
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+					label: 'SAST',
+					items: [{ autogenerate: { directory: 'SAST' } }],
 				},
 			],
 		}),
