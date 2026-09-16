@@ -33,6 +33,10 @@ export default defineConfig({
 					label: 'SAST',
 					items: [{ autogenerate: { directory: 'SAST' } }],
 				},
+				{
+					label: 'CI/CD',
+					items: [{ autogenerate: { directory: 'CI:CD' } }],
+				}
 			],
 		}),
 	],
